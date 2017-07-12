@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginfondo3"
+    tools:context="com.example.adrian.mapa.login_Activity">
+
+    <EditText
+        android:id="@+id/Pass"
+        android:hint="contraseña"
+        android:textColorHint="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:elevation="0dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:lineSpacingExtra="-9sp"
+        android:textAlignment="viewStart"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText,LabelFor,MissingConstraints"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="330dp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/User"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/User"
+        android:hint="usuario"
+        android:textColorHint="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="-9sp"
+        android:textAlignment="viewStart"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText,LabelFor,MissingConstraints"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="271dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/Pass" />
+
+    <Button
+        android:id="@+id/login"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColorLink="@android:color/holo_orange_dark"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="377dp"
+        android:layout_below="@+id/Pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+
+    <Button
+        android:id="@+id/register"
+        style="@android:style/Widget.Material.Light.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="465dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/login"
+        android:layout_marginBottom="49dp" />
+
+</RelativeLayout>

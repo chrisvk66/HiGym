@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/splash_img"
+    android:layout_gravity="center"
+    android:id="@+id/lin_lay"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="310dp"
+        android:layout_height="239dp"
+        android:id="@+id/splash"
+        android:background="@drawable/pro2"
+        tools:ignore="ContentDescription,InefficientWeight,MissingConstraints"
+        tools:layout_editor_absoluteY="76dp"
+        tools:layout_editor_absoluteX="32dp"
+        android:layout_weight="0.20" />
+
+</LinearLayout>

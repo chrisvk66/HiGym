@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="182dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/layout_bg"
+        android:orientation="vertical"
+        android:paddingLeft="45dp"
+        android:paddingTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.04">
+
+            <TextView
+                android:id="@+id/tv1_p1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Dia de la semana"
+                android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="322dp"
+        android:layout_height="197dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/layout_bg"
+        android:orientation="vertical"
+        android:paddingLeft="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/listView_page1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/button3" />
+
+                <Button
+                    android:id="@+id/button3"
+                    style="@android:style/Widget.Holo.Light.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@android:color/holo_red_dark" />
+
+                <Button
+                    android:id="@+id/button4"
+                    style="@android:style/Widget.Holo.Light.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button3"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/listView_page1"
+                    android:background="@android:color/holo_red_dark" />
+
+                <Button
+                    android:id="@+id/button5"
+                    style="@android:style/Widget.Holo.Light.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button4"
+                    android:layout_marginTop="13dp"
+                    android:layout_toEndOf="@+id/listView_page1"
+                    android:background="@android:color/holo_red_dark" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.04">
+
+            <ImageButton
+                android:id="@+id/page1_button_rutinas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imageView"
+                android:layout_toEndOf="@+id/imageView"
+                android:background="@android:color/transparent"
+                android:src="@drawable/calendarior"
+                app:srcCompat="@drawable/calendarior"
+                tools:layout_editor_absoluteX="225dp"
+                tools:layout_editor_absoluteY="-1dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/progressBar6"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/mano"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/mano"
+                tools:layout_editor_absoluteX="86dp"
+                tools:layout_editor_absoluteY="118dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/botellagua"
+                app:srcCompat="@drawable/botellagua"
+                tools:layout_editor_absoluteX="-15dp"
+                tools:layout_editor_absoluteY="30dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar6"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="19dp"
+                android:layout_weight="0.4"
+                android:background="@android:color/black"
+                android:max="100"
+                android:progress="0"
+                android:progressBackgroundTintMode="@color/colorGreen"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="208dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/progressBar6"
+                android:layout_marginStart="24dp"
+                android:src="@drawable/circuloazul"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/circuloazul"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="6dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView2"
+                android:layout_alignEnd="@+id/imageButton3"
+                android:layout_marginBottom="13dp"
+                android:layout_marginEnd="8dp"
+                android:text="0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@android:color/white"
+                android:visibility="invisible"
+                tools:layout_editor_absoluteX="74dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

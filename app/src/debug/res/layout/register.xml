@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="HardcodedText,MissingConstraints"
+
+        android:layout_marginTop="21dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/Ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/aceptar2"
+        tools:ignore="ContentDescription,MissingConstraints"
+        tools:layout_editor_absoluteX="275dp"
+        tools:layout_editor_absoluteY="455dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="visible"
+        android:src="@drawable/aceptar2"
+        android:layout_alignBottom="@+id/Volver"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/Volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription=""
+        app:srcCompat="@drawable/botonatras"
+        tools:ignore="ContentDescription,MissingConstraints,UnknownId"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="484dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="visible"
+        android:src="@drawable/botonatras"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/EstaturaR"
+        android:layout_marginEnd="13dp" />
+
+    <EditText
+        android:id="@+id/EdadR"
+        android:hint="años"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="date"
+        android:lineSpacingExtra="-8sp"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText,LabelFor,MissingConstraints"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="302dp"
+        android:layout_marginBottom="106dp"
+        android:layout_above="@+id/Ok"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/ConfP"
+        android:hint="confirmar contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPassword|textVisiblePassword"
+        android:lineSpacingExtra="-8sp"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText,LabelFor,MissingConstraints"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="229dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/EdadR" />
+
+    <EditText
+        android:id="@+id/UserR"
+        android:hint="nombre usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="-8sp"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText,LabelFor,MissingConstraints"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="136dp"
+
+
+        android:layout_marginBottom="44dp"
+        android:layout_above="@+id/PassR"
+        android:layout_alignStart="@+id/PassR" />
+
+    <EditText
+        android:id="@+id/PassR"
+        android:hint="contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPassword|textVisiblePassword"
+        android:lineSpacingExtra="-8sp"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText,LabelFor,MissingConstraints"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="190dp"
+        android:layout_marginBottom="15dp"
+        tools:text="Password"
+        android:layout_above="@+id/ConfP"
+        android:layout_alignStart="@+id/ConfP" />
+
+</RelativeLayout>

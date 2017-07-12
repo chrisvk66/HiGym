@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rutinas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context="com.example.adrian.mapa.Rutinas">
+
+    <GridView
+        android:id="@+id/rutinas_grid_view"
+        style="@android:style/Widget.Material.Light.GridView"
+        android:layout_width="match_parent"
+        android:layout_height="242dp"
+        android:background="@android:color/white"
+        android:numColumns="7"
+        android:stretchMode="columnWidth" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/rutinas_bton_modificar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/botonguardar" />
+
+            <ImageButton
+                android:id="@+id/rutinas_bton_crear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/rutinas_bton_modificar"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/botonmas" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:background="@drawable/layout_bg2"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/rutinas_bton_crear" />
+
+            <ImageButton
+                android:id="@+id/rutinas_bton_borrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/spinner"
+                android:layout_marginEnd="14dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/botonborrar" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

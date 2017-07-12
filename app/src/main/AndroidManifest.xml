@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.adrian.mapa">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <permission
+        android:name="com.javapapers.android.googleplacesdetail.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.javapapers.android.googleplacesdetail.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoicon"
+        android:label="HardGYM"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+
+
+
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBp54M4hc9F-0opaXK5CqlQOf8EaPv34ms"/>
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+
+        <activity
+            android:name="com.example.adrian.mapa.Music_Activity"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+
+        <service android:name="com.example.adrian.mapa.MusicService" />
+
+
+        <activity android:name=".Splashscreen"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".login_Activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.adrian.mapa.MapsActivity"
+            android:screenOrientation="portrait"><intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+
+            <category android:name="android.intent.category.DEFAULT"/>
+        </intent-filter>
+
+        </activity>
+
+
+
+
+        <activity android:name=".RegisterActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+
+
+
+
+        <activity android:name=".MainActivity"
+            android:parentActivityName="com.example.adrian.mapa.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.adrian.mapa.MainActivity">
+            </meta-data>
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
+
+        <activity android:name=".FormularioRutina"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".ModificarRutina"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+
+
+        <activity android:name=".vacio"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Rutinas"
+            android:screenOrientation="landscape"></activity>
+
+
+    </application>
+
+</manifest>

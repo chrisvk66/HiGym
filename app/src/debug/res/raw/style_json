@@ -1,0 +1,41 @@
+[
+  {
+  "featureType": "poi.business",
+  "elementType": "all",
+  "stylers": [
+    {
+      "visibility": "off"
+    }
+  ]
+},
+
+
+  {
+    "featureType": "poi.government",
+    "elementType": "all",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+
+
+
+
+
+
+  {
+    "featureType": "transit",
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  }
+
+
+
+
+]
