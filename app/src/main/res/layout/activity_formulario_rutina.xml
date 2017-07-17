@@ -13,9 +13,9 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:text="Nombre de rutina: "
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/name_routine" />
 
         <EditText
             android:id="@+id/formulario_nombre_rutina"
@@ -39,7 +39,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="LUNES" />
+                android:text="@string/monday" />
 
             <EditText
                 android:id="@+id/formulario_lun_ejer1"
@@ -66,7 +66,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="MARTES" />
+                android:text="@string/tuesday" />
 
             <EditText
                 android:id="@+id/formulario_mar_ejer1"
@@ -93,7 +93,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="MIERCOLES" />
+                android:text="@string/wednesday" />
 
             <EditText
                 android:id="@+id/formulario_mie_ejer1"
@@ -120,7 +120,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="JUEVES" />
+                android:text="@string/thursday" />
 
             <EditText
                 android:id="@+id/formulario_jue_ejer1"
@@ -154,7 +154,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="VIERNES" />
+                android:text="@string/friday" />
 
             <EditText
                 android:id="@+id/formulario_vie_ejer1"
@@ -181,7 +181,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SABADO" />
+                android:text="@string/saturday" />
 
             <EditText
                 android:id="@+id/formulario_sab_ejer1"
@@ -208,7 +208,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DOMINGO" />
+                android:text="@string/sunday" />
 
             <EditText
                 android:id="@+id/formulario_dom_ejer1"
@@ -233,5 +233,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="Formulario a rellenar" />
+        android:text="@string/form_to_fill_in" />
 </LinearLayout>

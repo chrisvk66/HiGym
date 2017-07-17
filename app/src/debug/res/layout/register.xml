@@ -10,17 +10,17 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="REGISTER"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="@string/register_menu"
         android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
         android:textSize="30sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:ignore="HardcodedText,MissingConstraints"
 
-        android:layout_marginTop="21dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <ImageButton
         android:id="@+id/Ok"
@@ -56,72 +56,71 @@
 
     <EditText
         android:id="@+id/EdadR"
-        android:hint="años"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/Ok"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="106dp"
         android:background="@android:color/white"
         android:ems="10"
+        android:hint="@string/years"
         android:inputType="date"
         android:lineSpacingExtra="-8sp"
         android:textSize="24sp"
         tools:ignore="HardcodedText,LabelFor,MissingConstraints"
         tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="302dp"
-        android:layout_marginBottom="106dp"
-        android:layout_above="@+id/Ok"
-        android:layout_centerHorizontal="true" />
+        tools:layout_editor_absoluteY="302dp" />
 
     <EditText
         android:id="@+id/ConfP"
-        android:hint="confirmar contraseña"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/EdadR"
+        android:layout_centerVertical="true"
         android:background="@android:color/white"
         android:ems="10"
+        android:hint="@string/confirm_password"
         android:inputType="textPassword|textVisiblePassword"
         android:lineSpacingExtra="-8sp"
         android:textSize="24sp"
         tools:ignore="HardcodedText,LabelFor,MissingConstraints"
         tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="229dp"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/EdadR" />
+        tools:layout_editor_absoluteY="229dp" />
 
     <EditText
         android:id="@+id/UserR"
-        android:hint="nombre usuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/PassR"
+        android:layout_alignStart="@+id/PassR"
+        android:layout_marginBottom="44dp"
         android:background="@android:color/white"
         android:ems="10"
+        android:hint="@string/user"
         android:inputType="textPersonName"
         android:lineSpacingExtra="-8sp"
         android:textSize="24sp"
+
+
         tools:ignore="HardcodedText,LabelFor,MissingConstraints"
         tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="136dp"
-
-
-        android:layout_marginBottom="44dp"
-        android:layout_above="@+id/PassR"
-        android:layout_alignStart="@+id/PassR" />
+        tools:layout_editor_absoluteY="136dp" />
 
     <EditText
         android:id="@+id/PassR"
-        android:hint="contraseña"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/ConfP"
+        android:layout_alignStart="@+id/ConfP"
+        android:layout_marginBottom="15dp"
         android:background="@android:color/white"
         android:ems="10"
+        android:hint="@string/password"
         android:inputType="textPassword|textVisiblePassword"
         android:lineSpacingExtra="-8sp"
         android:textSize="24sp"
         tools:ignore="HardcodedText,LabelFor,MissingConstraints"
         tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="190dp"
-        android:layout_marginBottom="15dp"
-        tools:text="Password"
-        android:layout_above="@+id/ConfP"
-        android:layout_alignStart="@+id/ConfP" />
+        tools:layout_editor_absoluteY="190dp" />
 
 </RelativeLayout>

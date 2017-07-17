@@ -4,6 +4,24 @@
     <string name="hint_minute">Minute</string>
     <string name="message_minutes">Please Enter Minutes...</string>
     <string name="TAG1"> </string>
+    <string name="name_routine">Nombre de rutina: </string>
+    <string name="monday">LUNES</string>
+    <string name="tuesday">MARTES</string>
+    <string name="wednesday">MIERCOLES</string>
+    <string name="thursday">JUEVES</string>
+    <string name="friday">VIERNES</string>
+    <string name="saturday">SABADO</string>
+    <string name="sunday">DOMINGO</string>
+    <string name="form_to_fill_in">Formulario a rellenar</string>
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="register">Regístrate</string>
+    <string name="player">Reproductor</string>
+    <string name="weekday">Dia de la semana</string>
+    <string name="register_menu">REGISTRO</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="years">Años</string>
     <string-array name="place_type">
         <item>airport</item>
         <item>atm</item>

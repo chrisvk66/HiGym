@@ -17,7 +17,7 @@
         android:background="@android:color/black"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:title="Reproductor"
+        app:title="@string/player"
         tools:ignore="UnusedAttribute" />
 
     <ListView
